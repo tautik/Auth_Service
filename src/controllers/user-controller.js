@@ -48,6 +48,7 @@ const signIn = async (req, res) => {
     });
   }
 };
+
 const isAuthenticated = async (req, res) => {
   try {
     const token = req.headers["x-access-token"];
@@ -72,4 +73,5 @@ const isAuthenticated = async (req, res) => {
 module.exports = {
   create,
   signIn,
+  isAuthenticated,
 };
