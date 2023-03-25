@@ -16,8 +16,7 @@ const create = async (req, res) => {
       err: {},
     });
   } catch (error) {
-    console.log(error);
-    //catches the error sent by service layer
+    // catches the error sent by service layer
     return res.status(error.statusCode).json({
       message: error.message,
       data: {},
